@@ -1,0 +1,79 @@
+.container {
+  width: var(--max-width);
+  margin: 0 auto;
+}
+
+.header {
+  background: linear-gradient(90deg, var(--red-light), var(--green-light));
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 50px;
+  position: relative;
+}
+.avatar {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: green;
+  border-radius: 50%;
+  top: 80%;
+  left: 5%;
+  border: 5px solid white;
+  box-shadow: var(--box-shadow-03);
+}
+.profile {
+  height: calc(100vh - 215px);
+  width: 100%;
+  background-color: white;
+  padding: 8rem 2rem;
+}
+
+.profile-control {
+  display: flex;
+  border-bottom: 1px solid var(--gray-300);
+  padding: 1rem 0;
+  align-items: center;
+}
+
+.profile-lable {
+  margin-bottom: 0;
+  margin-right: 100px;
+  width: 150px;
+}
+
+.profile-input {
+  padding: 0.2rem 0.4rem;
+  border-radius: var(--border-radius);
+  border-color: var(--gray-200);
+  width: 250px;
+}
+
+.profile-verify {
+  margin-left: 1rem;
+  color: green;
+}
+
+.profile-unverify {
+  margin-left: 1rem;
+  color: red;
+}
+
+.profile-sendverify {
+  cursor: pointer;
+}
+
+/*  */
+
+.profile-cancel {
+  border: 1px solid var(--gray-900);
+  margin-left: 370px;
+  margin-right: 50px;
+}
+.profile-save {
+  border: 1px solid var(--gray-900);
+}
+.profile-save:hover,
+.profile-cancel:hover {
+  color: white;
+  background-color: var(--primary-color-800);
+}
